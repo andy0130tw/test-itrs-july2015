@@ -1,0 +1,44 @@
+body, button {
+	font-family: Roboto;
+}
+
+body {
+	/*background-image: linear-gradient(0% #0)*/
+	background-color: #21abee;
+	text-align: center;
+	color: white;
+}
+
+#title {
+	font-family: 'Roboto Mono';
+	font-size: 54px;
+	color: white;
+	margin-top: 2em;
+}
+
+#reset {
+	border-radius: 50%;
+	background-color: brown;
+	transition: background-color 400ms ease-out;
+	border: 1px solid red;
+	color: #333;
+	margin: 2em 0;
+	width: 60px;
+	height: 60px;
+	font-size: 14px;
+}
+
+#reset:hover {
+	background-color: white;
+}
+
+#word {
+	font-size: 72px;
+}
+
+#time {
+	font-size: 20px;
+	margin: 2em 0;
+}
+
+
