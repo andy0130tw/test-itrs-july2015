@@ -1,42 +1,63 @@
 body, button {
-	font-family: Roboto;
+	font-family: Lato, sans-serif;
 }
 
 body {
 	/*background-image: linear-gradient(0% #0)*/
-	background-color: #21abee;
+	background-color: #2196F3;
 	text-align: center;
 	color: white;
 }
 
 #title {
-	font-family: 'Roboto Mono';
+	font-family: 'Roboto Mono', monospace;
 	font-size: 54px;
 	color: white;
+    font-weight: 300;
 	margin-top: 2em;
 }
 
-#reset {
-	border-radius: 50%;
-	background-color: brown;
-	transition: background-color 400ms ease-out;
-	border: 1px solid red;
-	color: #333;
-	margin: 2em 0;
-	width: 60px;
+#buttons {
+    margin: 5em;
+}
+
+button.round {
+    width: 60px;
 	height: 60px;
 	font-size: 14px;
+    color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .6);
+	border-radius: 50%;
+	transition: background-color 400ms ease-out;
+    border-style: none;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+    outline: 0;
 }
 
-#reset:hover {
-	background-color: white;
+button.round:disabled {
+    background-color: #CFD8DC;
+    color: #9E9E9E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 }
+
+button.round:disabled:hover {
+    background-color: #CFD8DC;
+}
+
+button.green { background-color: #4CAF50; }
+button.pink { background-color: #E91E63; }
+button.green:hover { background-color: #388E3C; }
+button.pink:hover { background-color: #C2185B; }
 
 #word {
-	font-size: 72px;
+	font-size: 144px;
+    margin: .7em 0;
+    /* prevent margin collapsing */
+    min-height: 1em;
 }
 
-#time {
+#status {
 	font-size: 20px;
 	margin: 2em 0;
 }
