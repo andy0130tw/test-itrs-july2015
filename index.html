@@ -3,15 +3,18 @@
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h1>Header</h1>
-  <input id="input" type="text">
-
-  <p id="output">empty</p>
-
-  <button id="myButton">Click me</button>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+  <div id="title">Typefun</div>
+  <div id="word"></div>
+  <div id="buttons">
+    <button class="round green" id="btnStart">Start</button>
+    <button class="round pink" id="btnReset" disabled>Reset</button>
+  </div>
+  <div id="status"><span id="score">0</span> | <span id="time">00 : 00</span></div>
+  <script src="jquery.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
